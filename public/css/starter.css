@@ -1,0 +1,25 @@
+body{
+	padding: 65px 0;
+	font-size: 12px;
+	font-family: 'Stoke', serif;
+	background:url(../img/grey_wash_wall.png) repeat 0 0 fixed;
+}
+
+#wrapper {
+  background:url(../img/fabric_of_squares_gray.png) repeat;
+  min-height: 80vh;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: solid 1px #ddd;
+
+}
+
+.navbar-nav {
+  font-size: 15px;
+}
+
+.text-center {
+  text-align: center;
+}

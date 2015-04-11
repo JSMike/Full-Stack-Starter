@@ -1,0 +1,25 @@
+{
+  "name": "Full-Stack-Starter",
+  "version": "0.0.1",
+  "description": "Host a simple app using full JavaScript stack. To be used as a base for new projects.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mike-js/Full-Stack-Starter.git"
+  },
+  "author": "Michael Cebrian <mcebri01@villanova.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mike-js/Full-Stack-Starter/issues"
+  },
+  "homepage": "https://github.com/Mike-js/Full-Stack-Starter",
+  "dependencies": {
+    "body-parser": "^1.12.0",
+    "ejs": "^2.2.4",
+    "express": "^4.11.2",
+    "morgan": "^1.5.1"
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="starterApp">
+<head>
+  <title ng-bind="title">Full Stack Starter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/hover-navbar.css">
+  <link rel="stylesheet" href="/css/starter.css">
+
+  <!-- Scripts -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="/lib/angular-ui/build/angular-ui.min.js"></script>
+  <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="/lib/angular-media-queries/match-media.js"></script>
+  <script type="text/javascript" src="/js/ngApp.js"></script>
+</head>
+<body>
+  <navbar></navbar>
+  <div id="indexView" ui-view></div>
+  <footer></footer>
+</body>
+</html>

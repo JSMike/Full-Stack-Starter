@@ -1,0 +1,29 @@
+{
+  "name": "Full-Stack-Starter",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Mike-js/Full-Stack-Starter",
+  "authors": [
+    "'Michael Cebrian <mcebri01@villanova.edu>"
+  ],
+  "description": "Host a simple app using JavaScript full stack. To be used as a base for new projects.",
+  "main": "server.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  "angular": "~1.3.13",
+  "angular-ui": "~0.4.0",
+  "ui-bootstrap": "~0.12.0",
+  "bootstrap": "~3.3.2",
+  "jquery": "~2.1.3",
+  "fontawesome": "~4.3.0",
+  "angular-ui-router": "~0.2.13",
+  "angular-bootstrap": "~0.12.0",
+  "angular-media-queries": "~0.4.0"
+}
+}

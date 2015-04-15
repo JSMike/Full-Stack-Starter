@@ -4,8 +4,56 @@ starterApp.controller('indexController', function() {
 
 });
 
-starterApp.controller('mainController', function() {
+starterApp.controller('mainController', function($scope, $http) {
+  $scope.people = [];
+  $http.get('/people/')
+    .success(function (data) {
+      $scope.people = data;
+    })
+    .error(function (err) {
+      console.log("main, get, error: " + err);
+    });
 
+  $scope.add = function () {
+    console.log("add");
+    $http.post('/people/', {new: true, name: ""})
+      .success(function (data) {
+        $scope.people = data;
+      })
+      .error(function (err) {
+        console.log("main, add, error: " + err);
+      });
+  };
+
+  $scope.update = function (idx) {
+    $http.post('/people/', $scope.people[idx])
+      .success(function (data) {
+        $scope.people = data;
+      })
+      .error(function (err) {
+        console.log("main, update, error: " + err);
+      });
+  };
+
+  $scope.del = function (idx) {
+    $http.post('/people/', {del: true, _id: $scope.people[idx]._id})
+      .success(function (data) {
+        $scope.people = data;
+      })
+      .error(function (err) {
+        console.log("main, del, error: " + err);
+      });
+  };
+
+  $scope.refresh = function () {
+    $http.get('/people/')
+      .success(function (data) {
+        $scope.people = data;
+      })
+      .error(function (err) {
+        console.log("main, refresh, error: " + err);
+      });
+  };
 });
 
 starterApp.controller('headerController', function($scope, $rootScope, $state, $http, cfg) {
